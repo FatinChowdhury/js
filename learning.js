@@ -11,3 +11,7 @@ document.querySelector("p#weather").classList.add("redbg")
 
 
 document.querySelector("p#weather").classList.remove("redbg")   // removes it
+
+
+document.querySelector("p#weather").classList.toggle("redbg")   // adds if exists, removes if not
+// this is good if you want one behavior (depends on situation)
