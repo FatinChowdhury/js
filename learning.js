@@ -8,3 +8,6 @@ document.querySelector("p#weather").style.backgroundColor = "white";
 // refer to change made in CSS class
 document.querySelector("p#weather").classList.add("redbg") 
 // now, this works as highlighter for p#weather text because of changes in CSS
+
+
+document.querySelector("p#weather").classList.remove("redbg")   // removes it
