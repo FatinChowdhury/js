@@ -15,3 +15,10 @@ document.querySelector("p#weather").classList.remove("redbg")   // removes it
 
 document.querySelector("p#weather").classList.toggle("redbg")   // adds if exists, removes if not
 // this is good if you want one behavior (depends on situation)
+
+
+
+// when u click on button u get alert
+document.querySelector("#open-nav-menu").addEventListener("click", function(){
+    alert("menu button clicked");
+});
