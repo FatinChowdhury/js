@@ -35,3 +35,7 @@ document.querySelector("#close-nav-menu").addEventListener("click", function(){
     document.querySelector("header nav .wrapper").classList.remove("nav-open");
 });
 
+// slice: .slice(start, end); end is not included
+// replace: .replace(a, b);
+
+
