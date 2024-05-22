@@ -38,4 +38,7 @@ document.querySelector("#close-nav-menu").addEventListener("click", function(){
 // slice: .slice(start, end); end is not included
 // replace: .replace(a, b);
 
+// append: .push(a)
+// append at start of arr: .unshift(b)
+
 
