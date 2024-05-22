@@ -41,4 +41,4 @@ document.querySelector("#close-nav-menu").addEventListener("click", function(){
 // append: .push(a)
 // append at start of arr: .unshift(b)
 
-
+// concatenate arrays: arr1.concat(arr2)
