@@ -44,3 +44,4 @@ document.querySelector("#close-nav-menu").addEventListener("click", function(){
 // concatenate arrays: arr1.concat(arr2)
 
 // hashmap: same as python
+// ex: student { name: "john" }, then to access: student.name
