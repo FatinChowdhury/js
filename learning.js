@@ -48,3 +48,46 @@ document.querySelector("#close-nav-menu").addEventListener("click", function(){
 // can put two hashmaps in form of array
 
 // removed thumbnail div at html, will replace with the js code
+
+
+
+// Gallery Section
+// src="./assets/gallery/image1.jpg" alt="Thumbnail Image 1"
+
+const galleryImages = [
+    {
+        src: "./assets/gallery/image1.jpg",
+        alt: "Thumbnail Image 1",
+    },
+
+    {
+        src: "./assets/gallery/image2.jpg",
+        alt: "Thumbnail Image 2",
+    },
+
+    {
+        src: "./assets/gallery/image3.jpg",
+        alt: "Thumbnail Image 3",
+    },
+]
+
+let mainImage = document.querySelector("#gallery > img")
+let thumbnails = document.querySelector("#gallery .thumbnails")
+
+mainImage.src = galleryImages[0].src
+mainImage.alt = galleryImages[0].alt
+
+// <img src="./assets/gallery/image1.jpg"
+// alt="Thumbnail Image 1" 
+// data-array-index="0" data-selected="true">
+
+// adding code into the html section (removed thumbnails in html)
+galleryImages.forEach(function(image, index){
+    let thumb = document.createElement("img")
+    thumb.src = image.src
+    thumb.alt = image.alt
+    thumb.dataset.arrayIndex = index
+    thumb.dataset.selected = false
+
+    thumbnails.appendChild(thumb)
+})
