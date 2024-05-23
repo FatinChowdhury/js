@@ -46,3 +46,5 @@ document.querySelector("#close-nav-menu").addEventListener("click", function(){
 // hashmap: same as python
 // ex: student { name: "john" }, then to access: student.name
 // can put two hashmaps in form of array
+
+// removed thumbnail div at html, will replace with the js code
