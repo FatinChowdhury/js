@@ -152,6 +152,41 @@ function galleryHandler() {
 
 }
 
+
+// Products Section
+/* <div class="product-item">
+    <img src="./assets/products/img6.png" alt="AstroFiction">
+    <div class="product-details">
+    <h3 class="product-title">AstroFiction</h3>
+    <p class="product-author">John Doe</p>
+    <p class="price-title">Price</p>
+    <p class="product-price">$ 49.90</p>
+    </div>
+</div> */
+
+// populating
+function productsHandler() {
+    
+    let productsSection = document.querySelector(".products-area")
+
+    // create HTML elem for each product
+    products.forEach(function(product, index){
+
+        // create HTML elem for individual product
+        let productElm = document.createElement("div")
+        productElm.classList.add("product-item")
+
+        // create product image
+        let productImage = document.createElement("img")
+        productImage.src = product.image
+        productImage.alt = "Image for " + product.title
+
+        productElm.append(productImage);
+
+        productsSection.append(productElm);
+    })
+}
+
 // Page Load
 menuHandler();
 greetingHandler();
