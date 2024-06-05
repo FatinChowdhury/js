@@ -1,3 +1,3 @@
-# js
+# DynamoWeb
 
-Speed learning JavaScript so I can get internship lol
+Making Website Interactive
